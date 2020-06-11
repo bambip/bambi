@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: white;
+
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    height: 64px;
+    width: 100%;
+    margin-right: 24px;
+}
+
+.container {
+display: flex;
+align-items: center;
+flex-wrap: nowrap;
+justify-content: flex-end;
+}
+
+.logo p {
+    height: 32px;
+    text-transform: uppercase;
+    order: 0;
+    display: inline-block;
+    align-items: center;
+    
+}
+
+.logo img {
+    padding-left: 24px;
+}
+
+.item {
+    order: 1;
+    position: relative;
+    display: inline-block; 
+    width: auto;
+}
+
