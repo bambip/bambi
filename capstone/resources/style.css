@@ -4,6 +4,7 @@
 body {
     margin: 0;
     background-color: white;
+    
 
 }
 
@@ -53,6 +54,7 @@ html {
 
 body {
     background-color: white;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 a {
@@ -81,10 +83,67 @@ h1,h2,h3 {
 
 /*-- Styling --*/
 
-.flex-content {
+.flex-content-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    
+    
+}
+
+.colmar-academy {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+}
+.colmar-academy strong {
+    font-weight: 800;
+}
+
+div .logo-c {
+    width: 50%;
+    display: inline-flex;
+    padding-left: 2rem;
+}
+
+.mobil {
+    display: none;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+ ul .flex {
+     align-content: center;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+}
+svg.mobil {
+    height: 2rem;
+    min-width: 2rem;
+    margin-right:0.5rem;
+}
+.flex li {
+  display: block;
+  padding: 0.5rem 1rem;
+  
 }
 
 
+@media only screen and (max-width: 1280px)
+ul svg {
+    fill: hsl(209, 23%, 60%);
+}
