@@ -47,7 +47,6 @@ justify-content: flex-end;
 /*start over*/
 
 html {
-    box-sizing: border-box;
     font-size: 16px;
     width: 100%;
 }
@@ -82,34 +81,46 @@ h1,h2,h3 {
 
 
 /*-- Styling --*/
-
-.flex-content-nav {
-    display: flex;
+header {
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    position: fixed;
     background-color: white;
     width: 100%;
-    
-    
 }
 
-.colmar-academy {
+.flex-content {
+    display: flex;
+    margin: auto 3.25rem;
+    align-content: flex-end;
+}
+.icon {
+    height: 2rem;
+    min-width: 2rem;
+}
+.logo span {
     font-size: 2rem;
     text-transform: uppercase;
     display: block;
+    flex: 1;
+    color: hsl(209, 23%, 60%);
 }
-.colmar-academy strong {
+
+strong {
     font-weight: 800;
+    color: hsl(205, 100%, 21%);
 }
 
-div .logo-c {
-    width: 50%;
-    display: inline-flex;
-    padding-left: 2rem;
-}
 
+.logo {
+    display: inline-block;
+}
+.flex li {
+    display: inline;
+    padding: 1rem;
+    
+  }
 .mobil {
     display: none;
 }
@@ -118,32 +129,18 @@ nav {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-
-
 }
+/*
  ul .flex {
      align-content: center;
      display: flex;
      justify-content: space-evenly;
  }
+ */
 
 }
 svg.mobil {
     height: 2rem;
     min-width: 2rem;
     margin-right:0.5rem;
-}
-.flex li {
-  display: block;
-  padding: 0.5rem 1rem;
-  
-}
-
-
-@media only screen and (max-width: 1280px)
-ul svg {
-    fill: hsl(209, 23%, 60%);
 }
